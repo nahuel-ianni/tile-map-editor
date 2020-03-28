@@ -1,0 +1,307 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AboutMapEditorContent" xml:space="preserve">
+    <value>{0}.
+
+Version 2012 (Build {1}).
+
+This product has been created by Nahuel Rodrigo Ianni @ {2}  based on Microsoft XNA framework.
+
+For more info visit the site: {3}</value>
+  </data>
+  <data name="AboutMapEditorCustomWindowTitle" xml:space="preserve">
+    <value>About Map Editor</value>
+  </data>
+  <data name="AboutMapEditorWebsites" xml:space="preserve">
+    <value>http://create.msdn.com/en-US/</value>
+  </data>
+  <data name="AddLayerCustomWindowTitle" xml:space="preserve">
+    <value>Add layer</value>
+  </data>
+  <data name="Clean" xml:space="preserve">
+    <value>Clean</value>
+  </data>
+  <data name="CleanCurrentLayerMsgBoxText" xml:space="preserve">
+    <value>You're about to delete all tiles from the current layer.
+
+Do you wish to continue?</value>
+  </data>
+  <data name="CleanLayerMsgBoxText" xml:space="preserve">
+    <value>You're about to delete all tiles from the selected layer.
+
+Do you wish to continue?</value>
+  </data>
+  <data name="CleanMapMsgBoxText" xml:space="preserve">
+    <value>You're about to delete all tiles from the map.
+
+Do you wish to continue?</value>
+  </data>
+  <data name="Clear" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ClearComboKey" xml:space="preserve">
+    <value>INSTRUCTION: EMPTY CODE VALUES COMBO ITEMS.</value>
+  </data>
+  <data name="ClearLayerCustomWindowTitle" xml:space="preserve">
+    <value>Clear layer</value>
+  </data>
+  <data name="CodeValueFileFilter" xml:space="preserve">
+    <value>TXT Files|*.txt</value>
+  </data>
+  <data name="Coordinates" xml:space="preserve">
+    <value>{0}, {1}</value>
+  </data>
+  <data name="CopyLayerCustomWindowTitle" xml:space="preserve">
+    <value>Copy layer</value>
+  </data>
+  <data name="CopyLayerMsgBoxText" xml:space="preserve">
+    <value>You're about to copy all tiles within two layers. This may cause the lose of selected tiles for a layer.
+Do you wish to continue?</value>
+  </data>
+  <data name="DesignerName" xml:space="preserve">
+    <value>TimelessReality</value>
+  </data>
+  <data name="Empty" xml:space="preserve">
+    <value>Empty</value>
+  </data>
+  <data name="Enemy" xml:space="preserve">
+    <value>Enemy</value>
+  </data>
+  <data name="EnemyBlocking" xml:space="preserve">
+    <value>Enemy Block</value>
+  </data>
+  <data name="ErrorReadingFile" xml:space="preserve">
+    <value>An error ocurred while reading the file.</value>
+  </data>
+  <data name="ErrorTileSheet" xml:space="preserve">
+    <value>The selected file is not a valid image.</value>
+  </data>
+  <data name="FillLayerCustomWindowTitle" xml:space="preserve">
+    <value>Fill layer</value>
+  </data>
+  <data name="FillLayerMsgBoxText" xml:space="preserve">
+    <value>You're about to fill all tiles for the selected layer with the selected tile.
+
+Do you wish to continue?</value>
+  </data>
+  <data name="Finish" xml:space="preserve">
+    <value>Finish</value>
+  </data>
+  <data name="HideLayerCustomWindowTitle" xml:space="preserve">
+    <value>Hide layer</value>
+  </data>
+  <data name="Layer" xml:space="preserve">
+    <value>Layer {0}</value>
+  </data>
+  <data name="Lethal" xml:space="preserve">
+    <value>Lethal</value>
+  </data>
+  <data name="Line" xml:space="preserve">
+    <value>---</value>
+  </data>
+  <data name="LoadCodeValueFile" xml:space="preserve">
+    <value>Load Code Values</value>
+  </data>
+  <data name="LoadMap" xml:space="preserve">
+    <value>Load Map</value>
+  </data>
+  <data name="LoadNewTileSheetMsgBoxText" xml:space="preserve">
+    <value>You're about to change the tile sheet source file. 
+Consider that this can change the images inside the layers.
+
+If you continue with the change, don't forget to change the size of the tiles on the map configuration accordingly to the new size of the tiles in the tile sheet.
+
+Do you wish to continue?</value>
+  </data>
+  <data name="LoadTileSheet" xml:space="preserve">
+    <value>Load Tile Sheet</value>
+  </data>
+  <data name="ModifyMapGravityCustomWindowTitle" xml:space="preserve">
+    <value>Modify map gravity</value>
+  </data>
+  <data name="NewMapCustomWindowTitle" xml:space="preserve">
+    <value>New Map</value>
+  </data>
+  <data name="NoTileSelected" xml:space="preserve">
+    <value>Before attempting to fill an entire layer you must select a tile from the list.</value>
+  </data>
+  <data name="PendingChanges" xml:space="preserve">
+    <value>The current map has pending changes that are about to be lost.
+
+Do you wish to continue?</value>
+  </data>
+  <data name="RedimensionMapSizeCustomWindowTitle" xml:space="preserve">
+    <value>Redimension map size</value>
+  </data>
+  <data name="RedimensionMapSizeMsgBoxText" xml:space="preserve">
+    <value>You're about to change the size of the map.
+This can cause the unintended lose of information.
+
+Do you wish to continue?</value>
+  </data>
+  <data name="RedimensionTileSizeCustomWindowTitle" xml:space="preserve">
+    <value>Redimension tile size</value>
+  </data>
+  <data name="RedimensionTileSizeMsgBoxText" xml:space="preserve">
+    <value>This option should only be used when dealing with tile sheets where tiles have a size different than {0} x {1}.
+
+Do you wish to continue?</value>
+  </data>
+  <data name="RemoveCurrentLayerMsgBoxText" xml:space="preserve">
+    <value>You're about to delete all tiles from the current layer.
+
+Do you wish to continue?</value>
+  </data>
+  <data name="RemoveLayerCustomWindowTitle" xml:space="preserve">
+    <value>Remove layer</value>
+  </data>
+  <data name="RemoveLayerMsgBoxText" xml:space="preserve">
+    <value>You're about to delete all tiles from the selected layer.
+
+Do you wish to continue?</value>
+  </data>
+  <data name="SaveMap" xml:space="preserve">
+    <value>Save Map</value>
+  </data>
+  <data name="SimpleMapName" xml:space="preserve">
+    <value>MAP0000</value>
+  </data>
+  <data name="Start" xml:space="preserve">
+    <value>Start</value>
+  </data>
+  <data name="TileSheetFileFilter" xml:space="preserve">
+    <value>PNG Files|*.png|JPG Files|*.jpg|Bitmap Files|*.bmp</value>
+  </data>
+  <data name="UnableToLoadFile" xml:space="preserve">
+    <value>Unable to load file.</value>
+  </data>
+  <data name="UnknownMap" xml:space="preserve">
+    <value>Unknown map</value>
+  </data>
+  <data name="Warning" xml:space="preserve">
+    <value>Warning</value>
+  </data>
+  <data name="White" xml:space="preserve">
+    <value>White</value>
+  </data>
+  <data name="XmlFileFilter" xml:space="preserve">
+    <value>XML Files|*.XML</value>
+  </data>
+</root>

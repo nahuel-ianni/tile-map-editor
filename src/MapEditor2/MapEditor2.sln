@@ -1,0 +1,24 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010 Express for Windows Phone
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MapEditor2", "MapEditor2\MapEditor2\MapEditor2.csproj", "{553DB0A0-9612-4FF1-B550-C53191BB5E8A}"
+EndProject
+Project("{96E2B04D-8817-42C6-938A-82C39BA4D311}") = "MapEditor2Content", "MapEditor2\MapEditor2Content\MapEditor2Content.contentproj", "{207B9E5F-C6EF-4E0A-B459-299E10505B83}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{553DB0A0-9612-4FF1-B550-C53191BB5E8A}.Debug|x86.ActiveCfg = Debug|x86
+		{553DB0A0-9612-4FF1-B550-C53191BB5E8A}.Debug|x86.Build.0 = Debug|x86
+		{553DB0A0-9612-4FF1-B550-C53191BB5E8A}.Release|x86.ActiveCfg = Release|x86
+		{553DB0A0-9612-4FF1-B550-C53191BB5E8A}.Release|x86.Build.0 = Release|x86
+		{207B9E5F-C6EF-4E0A-B459-299E10505B83}.Debug|x86.ActiveCfg = Debug|x86
+		{207B9E5F-C6EF-4E0A-B459-299E10505B83}.Release|x86.ActiveCfg = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

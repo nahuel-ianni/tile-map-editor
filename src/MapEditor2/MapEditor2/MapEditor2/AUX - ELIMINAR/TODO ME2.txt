@@ -1,0 +1,96 @@
+EL FILL/UNFILL NO GUARDA ESTADO DE MAPA!
+
+CUANDO EDITANDO LA GRAVEDAD CLICKEO SOBRE UN GRAVITY TB (ESTANDO EN EL OTRO), SE DESACTIVAN AMBOS.
+
+COPIAR UNA PARTE DEL MAPA Y PEGARLA EN OTRA ZONA!! <---------------------------
+
+Todos los metodos tienen q controlar el estado de Busy.
+
+IMPORTANTE QUE SE MUESTRE SOLO LA CAPA ACTIVA!
+
+Mejorar las transiciones de color. - | / \
+
+Hacer el icono de TR para poner en el about.
+
+Hacer html de ayuda.
+
+Si hago scroll en una barra y el puntero pasa sobre el mapa se dibuja la tile, pero el Undo no se activa ya q no se presiono sobre el mapa...
+
+*****************************************************************************************************************************************************************************************************************************************************
+
+Hacer ZOOM sobre el mapa?
+Rotation DA VUELTA UN MAPA SE PUEDEN HACER NIVELES EN LOS QUE EL ESCENARIO ESTE DADO VUELTA PARA QUE SEA MAS COMPLEJO!!!
+Se tendra que serializar tambien.
+El nymphs puede tener mapas grandes pero q se permita hacer zoomout para ver todo le mapa y desp saber donde ir...
+
+Mover el mapa usando el raton como un mapa.
+
+Darle al play y navegar x el mapa? (Permitir q las capas se muevan)
+
+Si Game.IsRunningSlowly --> solo se ve la capa actual(), no se pinta la grilla en las tiles sheet, se elimina la multiseleccion de tiles.
+Cuando vuelva a la normalidad tendria q restaurar los valores de antes del cambio! 
+Si se cambia su valor hay q guardar la variable para q no este preguntando constantemente si cambiar o no los valores!
+if (ShowYesNoMessageBox("The game is running slowly. ME can attempt to solve this but disabling the following actions...") == DialogResult.Yes)
+            {
+                _UndoCollection.Clear();
+                _RedoCollection.Clear();
+                _MaxUndoRedoItems = 2;
+
+                Game.ShowTilePreview = false;
+                Game.ApplyPassableToAllLayers = false;
+
+                TileMap.ShowLinedGrid = false;
+                TileMap.ShowPointedGrid = false;
+                TileMap.ModifyPassableBlocksAlphaValues = false;
+            }
+
+El XML tiene q poderse colapsar por areas, sino no sirve para buscar una tile en concreto.
+
+------------------------------> Un mapa --> Multiples tile sheets http://xnagpa.net/xna4/rpgtutorials/xna4rpgtutorial5.pdf multiple tile set. <------------------------------
+
+
+
+
+private void pctSurface_MouseUp(object sender, MouseEventArgs e)
+        {
+            if (this.Enabled &&
+                e != null &&
+                e.Button == System.Windows.Forms.MouseButtons.Right &&
+                Game.EditingFillRectangle == true)
+            {
+                if (_FillingRectangleMousePosition.X < e.X)
+                {
+                    Game.FillingRectangleStartingCell.X = (int)_FillingRectangleMousePosition.X;
+                    Game.FillingRectangleEndingCell.X = e.X;
+                }
+                else
+                {
+                    Game.FillingRectangleStartingCell.X = e.X;
+                    Game.FillingRectangleEndingCell.X = (int)_FillingRectangleMousePosition.X;
+                }
+
+                if (_FillingRectangleMousePosition.Y < e.Y)
+                {
+                    Game.FillingRectangleStartingCell.Y = (int)_FillingRectangleMousePosition.Y;
+                    Game.FillingRectangleEndingCell.Y = e.Y;
+                }
+                else
+                {
+                    Game.FillingRectangleStartingCell.Y = e.Y;
+                    Game.FillingRectangleEndingCell.Y = (int)_FillingRectangleMousePosition.Y;
+                }
+
+				Game.FillingRectangleStartingCell.X = MathHelper.Clamp(TileMap.GetCellByPixelX((int)Game.FillingRectangleStartingCell.X), 0, TileMap.MapWidth - 1));
+                Game.FillingRectangleStartingCell.Y = MathHelper.Clamp(TileMap.GetCellByPixelY((int)Game.FillingRectangleStartingCell.Y), 0, TileMap.MapHeight - 1);
+
+                Game.FillingRectangleEndingCell.X = MathHelper.Clamp(TileMap.GetCellByPixelX((int)Game.FillingRectangleEndingCell.X), 0, TileMap.MapWidth - 1);
+                Game.FillingRectangleEndingCell.Y = MathHelper.Clamp(TileMap.GetCellByPixelY((int)Game.FillingRectangleEndingCell.Y), 0, TileMap.MapHeight - 1);
+
+                Game.FillingRectangle =
+                    new Microsoft.Xna.Framework.Rectangle(
+                        (int)(Game.FillingRectangleStartingCell.X * TileMap.TileWidth),
+                        (int)(Game.FillingRectangleStartingCell.Y * TileMap.TileHeight),
+                        (int)((Game.FillingRectangleEndingCell.X - Game.FillingRectangleStartingCell.X + 1) * TileMap.TileWidth),
+                        (int)((Game.FillingRectangleEndingCell.Y - Game.FillingRectangleStartingCell.Y + 1) * TileMap.TileHeight));
+			}
+		}

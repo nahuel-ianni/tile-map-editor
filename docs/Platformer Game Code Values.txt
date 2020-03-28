@@ -1,0 +1,8 @@
+Enemy
+Dashing
+Invisible
+Jumping
+
+GEM
+
+T_0_0_0
