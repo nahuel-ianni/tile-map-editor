@@ -6,7 +6,7 @@ You can find more info on the [help file](./docs/help.pdf).
 
 
 ## Screenshots
-You can check examples of the application on the [img folder](./img/).
+You can check examples of the application on the [imgages folder](./img/).
 
 ![Home](./img/home.jpg "Home screen")
 
