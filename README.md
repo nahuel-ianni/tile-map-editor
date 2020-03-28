@@ -1,5 +1,5 @@
 # Tile map editor
-This application was created between 2011 and 2012 with the use of XNA framework and Winforms for Windows Vista.  
+This application was created on 2011 with the use of the [XNA framework](https://en.wikipedia.org/wiki/Microsoft_XNA) and [Winforms](https://en.wikipedia.org/wiki/Windows_Forms) for [Windows Vista](https://en.wikipedia.org/wiki/Windows_Vista).  
 The application provided an easy and customizable way of creating tile maps for 2D videogames and exporting them in XML format.
 
 You can find more info on the [help file](./docs/help.pdf).
